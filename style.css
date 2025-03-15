@@ -1,0 +1,533 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Space Grotesk", Sans-serif;
+}
+
+header{
+    max-width: 1519.2px;
+    margin: auto;
+}
+.topNav{
+    background-color: #051634;
+    padding: 10px 130px;
+    display: flex;
+    justify-content: space-between;
+}
+.topNav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    cursor:default;
+}
+header nav{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 110px;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0px 35px;
+    font-size: 18px;
+}
+.main button{
+    border: 1px solid rgb(64, 186, 234);
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: rgb(124, 214, 250);
+    color: blue;
+}
+.phone, .mail,.location{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.left-top{
+    display: flex;
+    gap: 30px;
+}
+.quoteBtn{
+    padding: 15px 25px;
+    font-size: 18px;
+    border: 1px solid blue;
+    border-radius: 25px;
+    background-color: white;
+}
+.right-nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.main{
+    height: 700px;
+    /* border: 1px solid black; */
+    background-image: url(./Images/bg-shape4.png),url(./Images/shape-1.png), url(./Images/banner-bg-1.png);
+    background-position: right bottom,58%,bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size:contain,contain,cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 1519.2px;
+    margin: auto;
+}
+.left-main{
+    width: 50%;
+    margin-left: 110px;
+}
+.left-main .lightBtn{
+    color: blue;
+    background-color: rgb(221, 221, 255);
+    height: 30px;
+    width: 145px;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+}
+.left-main button{
+    color: white;
+    background-color: blue;
+    border: none;
+    border-radius: 30px;
+    padding: 20px 40px;
+    font-size: 16px;
+    margin-top: 80px;
+}
+.right-main{
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right-main #rotate-img{
+    position: absolute;
+    top: 0;
+    left: 88px;
+    height: 530px;
+    animation-name: abc;
+            animation-duration: 18s;
+            animation-timing-function: linear;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction:reverse;
+}
+.right-main .profile{
+    height: 525px;
+    border-radius: 50%;
+}
+.title{
+    font-size: 65px;
+    font-weight: bold;
+    margin: 15px auto;
+    padding-right: 90px;
+}
+@keyframes abc{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.marque{
+    padding: 90px 105px;
+    max-width: 1309.2px;
+    margin: auto;
+}
+marquee img{
+    height: 40px;
+    margin: 0px 35px;
+}
+marquee{
+    padding: 10px;
+}
+.about-us{
+    height: 610px;
+    display: flex;
+    justify-content: center;
+    padding: 0px 105px 80px 105px;
+    margin: auto;
+    max-width: 1309.2px;
+}
+.left-about, .right-about{
+    width: 50%;
+}
+.left-about{
+    position: relative;
+}
+#aboutImg2{
+    position: absolute;
+    bottom: 0;
+    right: 46px;
+    border-radius: 10px;
+    border: 10px solid white;
+}
+#aboutImg1{
+    height: 480px;
+    border-radius: 10px;
+}
+.experience{
+    border: 1px solid blue;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    padding: 25px 30px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    position: absolute;
+    top: 8%;
+    right: 25%;
+    animation-name: floating;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.years h2{
+    font-size: 50px;
+}
+.years p{
+    font-size: 18px;
+}
+
+@keyframes floating{
+    0%{
+        top: 8%;
+    }
+    100%{
+        top: 10%;
+    }
+}
+.right-about .aboutBtn{
+    margin: 20px 0px;
+    color: blue;
+    background-color: rgb(221, 221, 255);
+    height: 30px;
+    width: 120px;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+}
+.features{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 15px;
+}
+.features img{
+    height: 22px;
+}
+.features p{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.right-about .discoverBtn{
+    padding: 15px 25px;
+    font-size: 18px;
+    border: 1px solid blue;
+    border-radius: 25px;
+    background-color: white;
+    display: inline-block;
+    margin-top: 70px;
+}
+.whyChooseUs{
+    height: 610px;
+    display: flex;
+    justify-content: center;
+    /* margin: 0px 105px 80px 105px; */
+    background-color: #F4F7FB;
+    padding: 0px 105px 80px 105px;
+    margin: auto;
+    max-width: 1309.2px;
+}
+.whyChooseUs .left-us{
+    width: 50%;
+}
+.whyChooseUs .left-us .chooseUsBtn{
+    margin: 20px 0px;
+    color: blue;
+    background-color: rgb(221, 221, 255);
+    height: 30px;
+    width: 140px;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+}
+.whyChooseUs .right-us{
+    background-image: url(./Images/chooseBg.png);
+    background-repeat: no-repeat;
+    background-position: 65%;
+    background-size: contain;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 60px;
+}
+.reliable,.Innovative{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 25px 90px 25px 15px
+}
+.content1 p, .content2 p{
+    line-height: 1.5rem;
+    font-size: 18px;
+    margin: 8px 0px;
+    letter-spacing: 0.5px;
+}
+.core-features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: 0px 105px 80px 105px; */
+    position: relative;
+    /* padding: 0px 105px 80px 105px; */
+    margin: auto;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    max-width: 1309.2px;
+}
+.core-features .coreBtn{
+    margin: 20px 0px;
+    color: blue;
+    background-color: rgb(221, 221, 255);
+    height: 30px;
+    width: 140px;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+}
+.cloud .icon, .analytics .icon, .custom .icon, .machine .icon{
+    font-size: 35px;
+    position: absolute;
+    top: -16%;
+    left: 8%;
+    padding: 15px;
+    background-color: #e7e7ff;
+    color: blue;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+.custom .icon, .analytics .icon{
+    padding: 15px 22px;
+}
+.cloud, .analytics, .custom, .machine{
+    position: relative;
+    padding: 40px 25px;
+    width: 270px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px -2.5px gray;
+} 
+.cloud h2, .analytics h2, .custom h2, .machine h2{
+    line-height: 2rem;
+}
+.cloud p, .analytics p, .custom p, .machine p{
+    font-size: 18px;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+    margin-top: 15px;
+}
+.cloud{
+    position: absolute;
+    top: 34%;
+    left: 0;
+}
+.analytics{
+    position: absolute;
+    top: 34%;
+    right: 0;
+}
+.custom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.machine{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.cloud:hover .icon, .analytics:hover .icon, .custom:hover .icon, .machine:hover .icon{
+    background-color: blue;
+    color: white;
+}
+.left-top .techBtn{
+    color: blue;
+    background-color: rgb(221, 221, 255);
+    height: 30px;
+    width: 140px;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+}
+.left-top h1{
+    margin-top: 20px;
+    font-size: 55px;
+}
+.techPortfolio .left-top{
+    display: flex;
+    flex-direction:column;
+    gap: 0;
+}
+.techPortfolio{
+    position: relative;
+    padding: 0px 105px;
+    max-width: 1309.2px;
+    margin: auto;
+}
+.techPortfolio .floatBtn{
+    padding: 15px 25px;
+    font-size: 18px;
+    border: 1px solid blue;
+    border-radius: 25px;
+    background-color: white;
+    position: absolute;
+    right: 105px;
+    top: 110px;
+}
+.portfolios{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 80px 0px;
+}
+.portfolios img{
+    border-radius: 35px;
+    margin: 0px 10px;
+}
+.tag{
+    background-color: white;
+    position: absolute;
+    border-radius: 15px;
+    padding: 30px 25px;
+    top: 130px;
+    right: 39%;
+    box-shadow: 0 4px 0px 0px blue;
+}
+.plans{
+    padding: 80px 105px;
+    max-width: 1309.2px;
+    margin: auto;
+}
+.plans .flexiblePlans{
+    color: blue;
+    background-color: rgb(221, 221, 255);
+    height: 30px;
+    width: 140px;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+    margin: 0px auto;
+}
+.plans>h1{
+    font-size: 55px;
+    text-align: center;
+    padding: 20px 0px;
+}
+.plans .time{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+.plans .time button{
+    background-color: blue;
+    color: white;
+    padding: 8px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+.planCards{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+.planCards .card1{
+    /* border: 2px solid blue; */
+    padding: 40px 30px;
+    width: 27%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0px black;
+}
+.planCards .card1 h2{
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+.card1 .header{
+    display: flex;
+    gap: 10px;
+}
+.card1 .header h1{
+    font-size: 60px;
+}
+.card1 .header p{
+    font-size: 20px;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+.card1>p{
+    font-size: 18px;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    padding: 25px 0px;
+}
+.paras{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.paras .paraIn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.card1 .getStartedBtn{
+    padding: 15px 25px;
+    font-size: 18px;
+    border: 1px solid blue;
+    border-radius: 25px;
+    background-color: white;
+    display: inline-block;
+    margin-top: 30px;
+}
+.planCards .cardBg1{
+    background-image: url(./Images/cardBg1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: -40px;
+    background-position-y: -80px;
+}
+.planCards .cardBg2{
+    background-image: url(./Images/cardBg2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: -40px;
+    background-position-y: -80px;
+}
+.planCards .cardBg3{
+    background-image: url(./Images/cardBg1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: -40px;
+    background-position-y: -80px;
+}
+.workProgress{
+    padding: 0px 105px;
+}
