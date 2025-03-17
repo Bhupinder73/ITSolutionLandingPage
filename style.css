@@ -529,5 +529,118 @@ marquee{
     background-position-y: -80px;
 }
 .workProgress{
-    padding: 0px 105px;
+    padding: 100px 105px;
+    color: white;
+    background-image: url(./Images/workProgressBG.png), url(./Images/workProgressBG2.png);
+    background-color: #051634;
+    background-position: bottom right, top left;
+    background-repeat: no-repeat, no-repeat;
+    position: relative;
+    /* padding: 80px 105px; */
+    max-width: 1309.2px;
+    margin: auto;
+}
+.workProcessBtn{
+    color: blue;
+    padding: 8px 22px;
+    background-color: #16243D;
+    border-radius: 10px;
+    display: inline-block;
+}
+.workProgress h1{
+    font-size: 55px;
+    color: white;
+    margin: 30px 0px;
+}
+.workProgress .strategies{
+    /* border: 1px solid white; */
+    width: 330px;
+    font-size: 18px;
+    word-spacing: 0.5px;
+    letter-spacing: 0.5px;
+    line-height: 1.5rem;
+    position: absolute;
+    top: 220px;
+    right: 130px;
+    color: #FFFFFFCC;
+}
+.workProgress .left-work{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+}
+.workProgress .workContent{
+    border: 1px solid grey;
+    border-radius: 20px;
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.left-work .number{
+    font-size: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: blue;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.left-work .content p{
+    font-size: 17px;
+    line-height: 1.5rem;
+    word-spacing: 0.5px;
+    color: #FFFFFFCC;
+}
+.left-work .content h2{
+    margin-bottom: 15px;
+}
+.workProgress .workSection{
+    display: flex;
+    gap: 100px;
+    padding-top: 20px;
+}
+.workProgress .right-work{
+    width: 50%;
+}
+.workProgress .right-work #topImg{
+    width: 600px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+.right-work .images{
+    position: relative;
+}
+.images .img-left{
+    position: absolute;
+    color: white;
+    background-color: blue;
+    top: 0;
+    left: 0;
+    height: 218px;
+    width: 226px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.images img{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.img-left h2{
+    font-size: 45px;
+}
+.img-left p{
+    font-size: 17px;
+    word-spacing: 1px;
 }
