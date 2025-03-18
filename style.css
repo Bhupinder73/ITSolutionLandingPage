@@ -125,7 +125,7 @@ nav ul li{
     height: 525px;
     border-radius: 50%;
 }
-.title{
+.left-main .title{
     font-size: 65px;
     font-weight: bold;
     margin: 15px auto;
@@ -643,4 +643,110 @@ marquee{
 .img-left p{
     font-size: 17px;
     word-spacing: 1px;
+}
+.successStories{
+    padding: 100px 105px;
+    position: relative;
+    max-width: 1309.2px;
+    margin: auto;
+}
+.successStories .blueDiv{
+    border-radius: 20px;
+    background-image: linear-gradient(#0e5af2ca), url(./Images/storiesBG.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 750px;
+    height: 300px;
+    padding: 100px 50px;
+}
+.blueDiv .StoriesBtn{
+    padding: 8px 20px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(82, 82, 255);
+    font-size: 16px;
+    display: inline-block;
+}
+.blueDiv h1{
+    font-size: 55px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.blueDiv .getSupportBtn{
+    padding: 15px 25px;
+    font-size: 18px;
+    border: 1px solid white;
+    border-radius: 25px;
+    background-color: transparent;
+    display: inline-block;
+    color: white; 
+    transition: all 0.3s ease; 
+}
+.getSupportBtn:hover{
+    border-color: black;
+    background-color: black;
+    cursor: pointer;
+}
+.rightDiv{
+    position: absolute;
+    top: 160px;
+    right: 0;
+    padding: 50px;
+    border-radius: 15px;
+    width: 490px;
+    height: 270px;
+    /* border: 1px solid black; */
+    background-color: white;
+    margin-right: 105px;
+}
+
+.rightDiv .header .title h2{
+    font-size: 22px;
+}
+.rightDiv .header .title p{
+    font-size: 17px;
+    font-weight: normal;
+}
+.rightDiv .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rightDiv .stars{
+    color: #F3DC65;
+}
+.content .body{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.content .body p{
+    font-size: 18px;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+    word-spacing: 0.5px;
+    color: gray;
+}
+.arrBtn{
+    display: flex;
+    gap: 5px;
+    margin-top: 50px;
+}
+.btn1, .btn2{
+    background-color: #8080804a;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.btn1:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+.btn2:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
 }
