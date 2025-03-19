@@ -750,3 +750,101 @@ marquee{
     color: white;
     cursor: pointer;
 }
+.blogNews{
+    padding-left: 105px;
+    padding-right: 105px;
+    padding-bottom: 100px;
+    /* position: relative; */
+    max-width: 1309.2px;
+    margin: auto;
+}
+.blogNews .blogNewsBtn{
+    color: blue;
+    background-color: rgb(221, 221, 255);
+    height: 30px;
+    width: 140px;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+    margin: 0px auto;
+}
+.blogNews h1{
+    font-size: 55px;
+    margin: 30px 0px;
+    text-align: center;
+}
+.blogNews .cards .card{
+    height: 420px;
+}
+.blogNews .cards{
+    display: flex;
+    justify-content: space-between;
+}
+.card .img{
+    width: 420px;
+    height: 260px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.img img{
+    transition: all 0.7s ease;
+}
+.img img:hover{
+    cursor: pointer;
+}
+.img .date{
+    height: 80px;
+    width: 62px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f8f8f8;
+}
+.img .date h2, .date p{
+    font-size: 20px;
+}
+.card .blog{
+    height: 136px;
+    width: 300px;
+    border: 1px solid lightgray;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 60px;
+    left: 28px;
+    background-color: white;
+}
+.blog h2{
+    font-size: 22px;
+    margin: 24px 0px;
+    transition: all 0.3s ease;
+}
+.blog h2:hover{
+    cursor: pointer;
+    color: blue;
+}
+.blog p{
+    transition: all 0.3s ease;
+}
+.blog p:hover{
+    color: blue;
+    cursor: pointer;
+}
+.blogHead{
+    display: flex;
+    gap: 30px;
+}
+.blogHead .author, .comment{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.card:hover img{
+    transform: scale(1.05);
+}
