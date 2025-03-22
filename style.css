@@ -29,6 +29,9 @@ header nav{
     padding: 20px 110px;
     align-items: center;
 }
+nav .logo img:hover{
+    cursor: pointer;
+}
 
 nav ul{
     display: flex;
@@ -114,6 +117,7 @@ nav .homeNav div h2{
     width: 100px;
     position: absolute;
     background-color: transparent;
+    /* background-color:red; */
     top: 110px;
     left: 33%;
     visibility: hidden;
@@ -133,7 +137,147 @@ nav .homeNav div h2{
 .pagesNav:hover{
     visibility: visible;
 }
+.servicesNav{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    row-gap: 10px;
+    position: absolute;
+    background-color: #F4F7FB;
+    top: 152px;
+    right: 46%;
+    visibility: hidden;
+    z-index: 1;
+}
+.servicesNav p{
+    color: #453e3e;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+.servicesNav p:hover{
+    color: blue;
+    cursor: pointer;
+}
+.dropSpace2{
+    height: 47px;
+    width: 100px;
+    position: absolute;
+    background-color: transparent;
+    /* background-color: red; */
+    top: 106px;
+    right: 50%;
+    visibility: hidden;
+}
+#navServices:hover ~.dropSpace2{
+    visibility: visible;
+}
+#navServices:hover ~.servicesNav{
+    visibility: visible;
+}
 
+.dropSpace2:hover{
+    visibility: visible;
+}
+.dropSpace2:hover ~.servicesNav{
+    visibility: visible;
+}
+.servicesNav:hover{
+    visibility: visible;
+}
+.blogNav{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    row-gap: 10px;
+    position: absolute;
+    background-color: #F4F7FB;
+    top: 152px;
+    right: 38%;
+    visibility: hidden;
+    z-index: 1;
+}
+.blogNav p{
+    color: #453e3e;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+.blogNav p:hover{
+    color: blue;
+    cursor: pointer;
+}
+.dropSpace3{
+    height: 47px;
+    width: 100px;
+    position: absolute;
+    background-color: transparent;
+    /* background-color: red; */
+    top: 106px;
+    right: 40%;
+    visibility: hidden;
+}
+#navBlog:hover ~.dropSpace3{
+    visibility: visible;
+}
+#navBlog:hover ~.blogNav{
+    visibility: visible;
+}
+.dropSpace3:hover{
+    visibility: visible;
+}
+.dropSpace3:hover ~.blogNav{
+    visibility: visible;
+}
+.blogNav:hover{
+    visibility: visible;
+}
+.contactNav{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    row-gap: 10px;
+    position: absolute;
+    background-color: #F4F7FB;
+    top: 152px;
+    right: 28%;
+    visibility: hidden;
+    z-index: 1;
+}
+.contactNav p{
+    color: #453e3e;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+.contactNav p:hover{
+    color: blue;
+    cursor: pointer;
+}
+.dropSpace4{
+    height: 47px;
+    width: 100px;
+    position: absolute;
+    background-color: transparent;
+    /* background-color: red; */
+    top: 106px;
+    right: 31%;
+    visibility: hidden;
+}
+#navContact:hover ~.dropSpace4{
+    visibility: visible;
+}
+#navContact:hover ~.contactNav{
+    visibility: visible;
+}
+.dropSpace4:hover{
+    visibility: visible;
+}
+.dropSpace4:hover ~.contactNav{
+    visibility: visible;
+}
+.contactNav:hover{
+    visibility: visible;
+}
 
 .main button{
     border: 1px solid rgb(64, 186, 234);
@@ -157,11 +301,20 @@ nav .homeNav div h2{
     border: 1px solid blue;
     border-radius: 25px;
     background-color: white;
+    transition: all 0.3s ease;
+}
+.quoteBtn:hover{
+    color: white;
+    background-color: blue;
+    cursor: pointer;
 }
 .right-nav{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+.right-nav img:hover{
+    cursor: pointer;
 }
 .main{
     height: 700px;
@@ -198,6 +351,11 @@ nav .homeNav div h2{
     padding: 20px 40px;
     font-size: 16px;
     margin-top: 80px;
+    transition: all 0.3s ease;
+}
+.left-main button:hover{
+    background-color: black;
+    cursor: pointer;
 }
 .right-main{
     position: relative;
@@ -339,6 +497,12 @@ marquee{
     background-color: white;
     display: inline-block;
     margin-top: 70px;
+    transition: all 0.3s ease;
+}
+.right-about .discoverBtn:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
 }
 .whyChooseUs{
     height: 610px;
@@ -495,6 +659,12 @@ marquee{
     position: absolute;
     right: 105px;
     top: 110px;
+    transition: all 0.3s ease;
+}
+.techPortfolio .floatBtn:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
 }
 .portfolios{
     position: relative;
@@ -542,7 +712,7 @@ marquee{
     margin-bottom: 50px;
     margin-top: 10px;
 }
-.plans .time button{
+.plans .time #btnMonth{
     background-color: blue;
     color: white;
     padding: 8px 25px;
@@ -550,6 +720,17 @@ marquee{
     border: none;
     border-radius: 5px;
     letter-spacing: 1px;
+    cursor: pointer;
+}
+.plans .time #btnYear{
+    background-color: rgb(234, 234, 234);
+    color: black;
+    padding: 8px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
 }
 .planCards{
     display: flex;
@@ -603,6 +784,28 @@ marquee{
     background-color: white;
     display: inline-block;
     margin-top: 30px;
+    transition: all 0.3s ease;
+}
+.card1 .getStartedBtn:hover{
+    cursor: pointer;
+    background-color: black;
+    border-color: black;
+    color: white;
+}
+.cardd2 .getStartedBtn{
+    padding: 15px 25px;
+    font-size: 18px;
+    border: 1px solid blue;
+    border-radius: 25px;
+    background-color: blue;
+    color: white;
+    display: inline-block;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+.cardd2 .getStartedBtn:hover{
+    cursor: pointer;
+    background-color: black;
 }
 .planCards .cardBg1{
     background-image: url(./Images/cardBg1.png);
@@ -994,6 +1197,9 @@ footer .subscribe{
     top: 24px;
     right: 346px;
 }
+.subscribe form button:hover{
+    cursor: pointer;
+}
 footer .mainFooter{
     padding-right: 105px;
     padding-left: 105px;
@@ -1036,6 +1242,9 @@ footer .mainFooter{
     word-spacing: 1px;
     width: 280px;
     line-height: 1.5rem;
+}
+.mainFooter .bantec img:hover{
+    cursor: pointer;
 }
 .mainFooter .bantec p{
     color: #dcd7d7;
