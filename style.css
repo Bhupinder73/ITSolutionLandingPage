@@ -83,6 +83,58 @@ nav .homeNav div h2{
     background-color: white;
     bottom: 0;
 }
+.pagesNav{
+    width: 1100px;
+    height: 240px;
+    display: flex;
+    position: absolute;
+    top: 110px;
+    justify-content: space-evenly;
+    background-color: #F4F7FB;
+    left: 209px;
+    z-index: 1;
+    margin-top: 43px;
+    visibility: hidden;
+}
+.pagesNav div h2{
+    margin: 30px 0px;
+}
+.pagesNav div p{
+    margin: 10px 0px;
+    font-size: 17px;
+    color: #453e3e;
+    letter-spacing: 0.5px;
+}
+.pagesNav div p:hover{
+    color: blue;
+    cursor: pointer;
+}
+.dropSpace{
+    height: 47px;
+    width: 100px;
+    position: absolute;
+    background-color: transparent;
+    top: 110px;
+    left: 33%;
+    visibility: hidden;
+}
+#navPages:hover ~.dropSpace{
+    visibility: visible;
+}
+#navPages:hover ~.pagesNav{
+    visibility: visible;
+}
+.dropSpace:hover{
+    visibility: visible;
+}
+.dropSpace:hover ~.pagesNav{
+    visibility: visible;
+}
+.pagesNav:hover{
+    visibility: visible;
+}
+
+
 .main button{
     border: 1px solid rgb(64, 186, 234);
     border-radius: 5px;
